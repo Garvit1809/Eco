@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home';
 import Feed from './Pages/Feed';
 import Campaign from './Pages/Campaign';
+import Campaigns from './Pages/Campaigns';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
     <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='/feed' element={<Feed/>} />
-    <Route path='/campaigns' element={<Campaign/>} />
+    <Route path='/campaigns' element={<Campaigns/>} />
+    <Route path='/campaigns/id' element={<Campaign/>} />
     </Routes>
     </BrowserRouter>
   );
