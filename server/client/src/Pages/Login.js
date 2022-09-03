@@ -110,7 +110,7 @@ const Login = () => {
 
 
   useEffect(() => {
-    if(localStorage.getItem('super-reach-user')) {
+    if(localStorage.getItem('ecogather-user')) {
       navigate('/');
     }
   }, []);
@@ -143,7 +143,7 @@ const handleSubmit = async (e) => {
           toast.error(data.msg, toastOptions);
       }
       if (data.status === true) {
-          localStorage.setItem("super-reach-user", JSON.stringify(data.user));
+          localStorage.setItem("ecogather-user", JSON.stringify(data.user));
           navigate("/");
       }
   }

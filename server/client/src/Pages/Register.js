@@ -9,7 +9,6 @@ import Wallpaper from "../Assets/Wallpaper2.webp";
 const Section = styled.div`
   width: 100vw;
   min-height: 100vh;
-  /* background-color: #f0f2f5; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,15 +159,11 @@ const Register = () => {
         toast.error(data.msg, toastOptions);
       }
       if (data.status === true) {
-        localStorage.setItem("super-reach-user", JSON.stringify(data.user));
-        navigate("/profile");
+        localStorage.setItem("ecogather-user", JSON.stringify(data.user));
+        navigate("/");
       }
     }
   };
-
-//   <Left>
-//             <img src={Wallpaper} alt="" />
-//           </Left>
 
   return (
     <>
