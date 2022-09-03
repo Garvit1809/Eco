@@ -10,7 +10,7 @@ const postSchema = mongoose.Schema(
       type: String,
       default: "",
     },
-    desc: {
+    description: {
       type: String,
       max: 500,
     },
@@ -25,6 +25,10 @@ const postSchema = mongoose.Schema(
     comments: {
       type: Array,
       default: [],
+    },
+    members: {
+      type: Array,
+      default: []
     }
   },
   { timestamps: true }
