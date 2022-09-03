@@ -5,7 +5,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import Wallpaper from "../Assets/Wallpaper2.webp";
-import Wallpaper2 from "../Assets/Wallpaper1.webp";
 
 const Section = styled.div`
   width: 100vw;
@@ -37,49 +36,8 @@ const Section = styled.div`
   }
 `;
 
-const Left = styled.div`
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 2rem;
-  padding-bottom: 7rem;
-  border: 1px solid red;
-  
-  img{
-      width: 100%;
-      border: 1px solid red;
-    /* height: 100%; */
-    object-fit: cover;
-  }
-
-  .RegisterLogo {
-    font-size: 50px;
-    font-weight: 800;
-    color: #1775ee;
-    margin-bottom: 10px;
-  }
-
-  .registerDesc {
-    font-size: 24px;
-    text-align: center;
-    /* border: 1px solid red; */
-  }
-
-  @media only screen and (max-width: 700px) {
-    /* border: 1px solid red; */
-    padding-bottom: 1rem;
-    margin: 0.5rem auto;
-
-    h3.RegisterLogo {
-      /* border: 1px solid red; */
-      margin: 2rem auto 1.4rem auto;
-    }
-  }
-`;
-
 const Right = styled.div`
-  flex: 1;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,7 +48,7 @@ const Right = styled.div`
   .registerBox {
     height: 400px;
     padding: 20px;
-    background-color: white;
+    background-color: rgba(256, 256, 256, 0.4);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -215,8 +173,6 @@ const Register = () => {
   return (
     <>
       <Section>
-        <div className="registerWrapper">
-          
           <Right>
             <div className="registerBox">
               <form className="registerBox" onSubmit={handleSubmit}>
@@ -257,7 +213,6 @@ const Register = () => {
               </button>
             </div>
           </Right>
-        </div>
       </Section>
       <ToastContainer />
     </>

@@ -86,7 +86,7 @@ const Campaigns = () => {
           <h4>
           {campaign.type}
           </h4>
-          <button onClick={() => handleCampaignClick(campaign.type)} >Join Campaign</button>
+          <button onClick={() => handleCampaignClick(campaign.type)} >Join {campaign.type}</button>
           </CampaignDesc>
         )
       })
