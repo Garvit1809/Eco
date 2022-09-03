@@ -12,26 +12,40 @@ min-height: calc(100vh - 4rem);
 /* border: 1px solid re; */
 
 display: grid;
-grid-template-columns: auto auto auto;
+grid-template-columns: auto auto auto auto;
 
 `
 
 const CampaignDesc = styled.div`
-border: 1px solid black;
-width: 90%;
+/* border: 1px solid black; */
+width: 86%;
 margin: 0 auto;
 margin-bottom: 2.5rem;
 border-radius: 10px;
+
+-webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
 
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+transition: all 0.2s ease;
+
+
+&:hover{
+  transform: translateY(-3%) scale(1.05);
+
+}
 
 img{
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+button{
+  margin-bottom: 1rem;
 }
 `
 
