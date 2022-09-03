@@ -1,8 +1,19 @@
 import React from 'react'
+import styled from 'styled-components'
+import Navbar from '../Components/Navbar'
+
+const Section = styled.div`
+width: 100%;
+/* height: 4rem; */
+
+`
 
 const Feed = () => {
   return (
-    <div>Feed</div>
+    <>
+    <Navbar/>
+    <Section>Feed</Section>
+    </>
   )
 }
 
