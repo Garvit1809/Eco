@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Navbar from "../Components/Navbar";
 import RightBar from "../Components/RightBar";
 import CentreBar from "../Components/CentreBar";
-import LeftBar from "../Components/LeftBar";
+import LeftBar from "../Components/FeedComp/LeftBar";
 import { useNavigate } from "react-router-dom";
 
 const Section = styled.div`
@@ -20,13 +20,13 @@ min-height: 200vh;
 
 const Home = () => {
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   if (!localStorage.getItem("super-reach-user")) {
-  //     navigate("/register");
-  //   }
-  // }, [navigate]);
+  useEffect(() => {
+    if (!localStorage.getItem("ecogather-user")) {
+      navigate("/register");
+    }
+  }, [navigate]);
 
   return (
     <>

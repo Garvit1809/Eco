@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import img1 from "../Assets/PeopleCleaningImg1.jpg";
-import img2 from "../Assets/PeopleCleaningImg2.webp";
-import img3 from "../Assets/PeopleCleaningImg3.jpg";
-import img4 from "../Assets/PeopleCleaningImg4.jpg";
+import post1 from "../Assets/PeopleCleaningImg1.jpg";
+import post2 from "../Assets/PeopleCleaningImg2.webp";
+import post3 from "../Assets/PeopleCleaningImg3.jpg";
+import post4 from "../Assets/PeopleCleaningImg4.jpg";
 
 const Section = styled.div`
   flex: 2.5;
@@ -92,10 +92,10 @@ const RightBar = () => {
         <Heading>Photos</Heading>
         <hr />
         <Images>
-          <img src={img1} alt="post1" />
-          <img src={img2} alt="post2" />
-          <img src={img3} alt="post3" />
-          <img src={img4} alt="post4" className="lastPic" />
+          <img src={post1} alt="post1" />
+          <img src={post2} alt="post2" />
+          <img src={post3} alt="post3" />
+          <img src={post4} alt="post4" className="lastPic" />
         </Images>
         <p>
           See more <span>here</span>
