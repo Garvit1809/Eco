@@ -52,8 +52,12 @@ button{
 const Campaigns = () => {
 
   const navigate = useNavigate()
-  const handleCampaignClick = () => {
-    navigate("/campaigns/id")
+  const handleCampaignClick = (type) => {
+    if (type === 'Campaign') {
+      navigate("/campaigns/id")
+    } else {
+      navigate("/campaigns/event")
+    }
   }
   return (
     <>
@@ -79,7 +83,10 @@ const Campaigns = () => {
           <h4>
           {campaign.members}
           </h4>
-          <button onClick={handleCampaignClick} >Join Campaign</button>
+          <h4>
+          {campaign.type}
+          </h4>
+          <button onClick={() => handleCampaignClick(campaign.type)} >Join Campaign</button>
           </CampaignDesc>
         )
       })
