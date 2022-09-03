@@ -18,14 +18,14 @@ app.use(cors());
 app.use('/api/auth', authRoutes)
 app.use('/api/posts', postsRoutes)
 
-app.get("/", (req,res) => {
-    res.status(200).json({
-        message: 'Hello!!'
-    })
-})
+// app.get("/", (req,res) => {
+//     res.status(200).json({
+//         message: 'Hello!!'
+//     })
+// })
 
-const PORT = 5000;
-const CONNECTION_URL = "mongodb+srv://Garvit:Garvit18@cluster0.wva2c.mongodb.net/EcoHacks?retryWrites=true&w=majority"
+const PORT = process.env.PORT;
+const CONNECTION_URL = process.env.MONGO_URL
 
 mongoose
   .connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
