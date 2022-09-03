@@ -1,20 +1,43 @@
-import React from 'react'
-import styled from 'styled-components'
-import Navbar from '../Components/Navbar'
+import React, { useEffect } from "react";
+import styled from "styled-components";
+import Navbar from "../Components/Navbar";
+import RightBar from "../Components/RightBar";
+import CentreBar from "../Components/CentreBar";
+import LeftBar from "../Components/LeftBar";
+import { useNavigate } from "react-router-dom";
 
 const Section = styled.div`
+display: flex;
 width: 100%;
-/* height: 4rem; */
+min-height: 200vh;
 
-`
+@media only screen and (max-width:700px) {
+  display: flex;
+  flex-direction: column;
+}
+`;
 
-const Feed = () => {
+
+const Home = () => {
+
+  // const navigate = useNavigate();
+
+  // useEffect(() => {
+  //   if (!localStorage.getItem("super-reach-user")) {
+  //     navigate("/register");
+  //   }
+  // }, [navigate]);
+
   return (
     <>
-    <Navbar/>
-    <Section>Feed</Section>
+      <Navbar />
+      <Section>
+        <LeftBar />
+        <CentreBar />
+        <RightBar />
+      </Section>
     </>
-  )
-}
+  );
+};
 
-export default Feed
+export default Home;

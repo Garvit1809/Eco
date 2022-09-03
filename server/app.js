@@ -18,12 +18,6 @@ app.use(cors());
 app.use('/api/auth', authRoutes)
 app.use('/api/posts', postsRoutes)
 
-// app.get("/", (req,res) => {
-//     res.status(200).json({
-//         message: 'Hello!!'
-//     })
-// })
-
 const PORT = process.env.PORT;
 const CONNECTION_URL = process.env.MONGO_URL
 
