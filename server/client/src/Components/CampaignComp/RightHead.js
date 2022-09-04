@@ -41,7 +41,7 @@ const RightHead = () => {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     const handleEventSubmit = () => {
-      alert("Hell")
+      alert("Created Event")
     }
   return (
     <Section>
@@ -56,7 +56,7 @@ const RightHead = () => {
     aria-describedby="modal-modal-description"
   >
     <Box sx={style} className={classes.modal}>
-      <h1>Host Events Like Kackathons, Seminars, Workshops to make people aware about our Environment and its conservation</h1>
+      <h1>Host Events Like Hackathons, Seminars, Workshops to make people aware about our Environment and its conservation</h1>
       <form onSubmit={handleEventSubmit}>
             <h3>Event Name</h3>
             <input type="text" name="" id="" placeholder="Enter Events Name" />

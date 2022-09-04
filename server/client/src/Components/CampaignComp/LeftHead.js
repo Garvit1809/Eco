@@ -43,7 +43,7 @@ const LeftHead = () => {
   const handleClose = () => setOpen(false);
 
   const handleSubmitCampaign = () => {
-    alert("Hell")
+    alert("Created Campaign")
   }
 
   return (

@@ -120,7 +120,7 @@ const Upload = styled.div`
 `;
 
 const Share = () => {
-  const [pomst, setPomst] = useState({
+  const [post, setPost] = useState({
     desc: "",
     img: "",
   });
@@ -140,18 +140,18 @@ const Share = () => {
 
 
   const handleChange = (e) => {
-    setPomst({ ...pomst, [e.target.name]: e.target.value })
+    setPost({ ...post, [e.target.name]: e.target.value })
   } 
   
   const handleSubmit = async (e) => {
     // e.preventDefault();
-    console.log(pomst);
+    console.log(post);
     const userData = await JSON.parse(localStorage.getItem("ecogather-user"));
     const { data } = await axios.post("http://localhost:5000/api/posts/post", {
       username: userData.username,
       profilePicture: userData.profilePicture,
-      description: pomst.desc,
-      img: pomst.img,
+      description: post.desc,
+      img: post.img,
     });
     console.log({data});
     // console.log("posted");
@@ -174,13 +174,13 @@ const Share = () => {
             rows="4"
             placeholder="Whats in your mind"
             name='desc'
-            value={pomst.desc}
+            value={post.desc}
             onChange={(e) => handleChange(e)}
           />
           <Buttons>
             <Upload>
                 <ImageIcon />
-                <FileBase64 type="file" multiple={false} onDone={({ base64 }) => setPomst({ ...pomst, img: base64 })} />
+                <FileBase64 type="file" multiple={false} onDone={({ base64 }) => setPost({ ...post, img: base64 })} />
             </Upload>
             <Button type="submit" text="Post" /> 
           </Buttons>

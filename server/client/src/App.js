@@ -20,7 +20,7 @@ function App() {
     <Route path='/login' element={<Login/>} />
     <Route path='/feed' element={<Feed/>} />
     <Route path='/campaigns' element={<Campaigns/>} />
-    <Route path='/campaigns/id' element={<Campaign/>} />
+    <Route path='/campaigns/1' element={<Campaign/>} />
     <Route path='/campaigns/event' element={<Event/>} />
     <Route path='/substitute' element={<Substitute/>} />
     </Routes>
