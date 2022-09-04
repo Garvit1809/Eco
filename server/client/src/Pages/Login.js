@@ -109,11 +109,11 @@ const Login = () => {
   };
 
 
-  useEffect(() => {
-    if(localStorage.getItem('ecogather-user')) {
-      navigate('/');
-    }
-  }, []);
+  // useEffect(() => {
+  //   if(localStorage.getItem('ecogather-user')) {
+  //     navigate('/');
+  //   }
+  // }, []);
 
   const handleValidation = () => {
     const { password, username } = user;

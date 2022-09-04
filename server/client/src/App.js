@@ -7,6 +7,7 @@ import Campaigns from './Pages/Campaigns';
 import Event from './Components/Event';
 import Register from './Pages/Register';
 import Login from './Pages/Login';
+import Profile from './Pages/Profile';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='/register' element={<Register/>} />
+    <Route path='/profile' element={<Profile/>} />
     <Route path='/login' element={<Login/>} />
     <Route path='/feed' element={<Feed/>} />
     <Route path='/campaigns' element={<Campaigns/>} />

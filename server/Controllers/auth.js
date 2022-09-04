@@ -52,3 +52,18 @@ module.exports.login = async (req,res,next) => {
         next(error)
     }
 }
+
+module.exports.setProfile = async (req, res, next) => {
+    try{
+        const { description, image, id } = req.body;
+        const userData = await User.findByIdAndUpdate(id , {
+            profilePicture: image,
+            userDescription: description,
+        })
+        return res.json({
+            status: true, userData
+        })
+    } catch(error){
+        next(error)
+    }
+}

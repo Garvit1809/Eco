@@ -3,6 +3,7 @@ import styled from "styled-components";
 import FileBase64 from "react-file-base64";
 import ImageIcon from "@mui/icons-material/Image";
 import axios from 'axios';
+import Button from "./Button";
 
 const Section = styled.div`
   width: 100%;
@@ -93,7 +94,8 @@ const Bottom = styled.div`
 const Buttons = styled.div`
   display: flex;
   flex-direction: row;
-
+  align-items: center;
+  justify-content: space-between;
   @media only screen and (max-width: 700px) {
     display: flex;
     justify-content: space-between;
@@ -123,7 +125,7 @@ const Share = () => {
     img: "",
   });
 
-  const [currentUser, setCurrentUser] = useState(undefined);
+  const [currentUser, setCurrentUser] = useState({});
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -151,8 +153,8 @@ const Share = () => {
       description: post.desc,
       img: post.img,
     });
-    // console.log({data});
-    console.log("posted");
+    console.log({data});
+    // console.log("posted");
   };
 
   return (
@@ -161,10 +163,10 @@ const Share = () => {
         <img src={currentUser.profilePicture} alt="user" />
         <div>
         <h2>{currentUser.username}</h2>
-        <p>{currentUser.description}</p>
+        <p>{currentUser.userDescription}</p>
         </div>
       </Top>
-      <hr className="shareHr" />~
+      <hr className="shareHr" />
       <Bottom>
         <form onSubmit={handleSubmit}>
           <textarea
@@ -180,7 +182,7 @@ const Share = () => {
                 <ImageIcon />
                 <FileBase64 type="file" multiple={false} onDone={({ base64 }) => setPost({ ...post, img: base64 })} />
             </Upload>
-            <button type="submit">Post</button>
+            <Button type="submit" text="Post" /> 
           </Buttons>
         </form>
       </Bottom>
