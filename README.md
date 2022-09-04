@@ -21,28 +21,24 @@ EcoTogether attempts to address the issue of environmental sustainability throug
 - Development 
   - Frontend :
   
-      ![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)
-      ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-      - Snowpack (Bundler)
-      - WebXR (VR)
+      ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
   
   - Backend :     
       ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
       ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-      ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+      ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+      - Mongoose
+
 
 ## Contributors
 
-Meet the team who worked on this project!
+Meet the wonderful team who worked on this project!
 
-<img src="https://opencollective.com/git-point/backers.svg?width=890">
-
+[![Christina Moon](https://avatars1.githubusercontent.com/u/12688534?v=3&s=144)](https://github.com/chrmoon25)  | [![Garvit Varshney](https://github.com/iharsh234/WebApp/blob/master/images/quandl.jpg)](https://github.com/Garvit1809)  | [![Lacey Umamoto](https://github.com/iharsh234/WebApp/blob/master/images/quandl.jpg)](https://github.com/lumamoto)  | [![Ishwarya Sundhararajan](https://github.com/iharsh234/WebApp/blob/master/images/quandl.jpg)](https://github.com/iSundhararajan)
+---|---
+[Christina Moon](https://github.com/chrmoon25) |[Garvit Varshney](https://github.com/Garvit1809) |[Lacey Umamoto](https://github.com/lumamoto)
+ |[Ishwarya Sundhararajan](https://github.com/iSundhararajan)
 
 ## Feedback
 
-Feel free to send us feedback on [Twitter](https://twitter.com/gitpointapp) or [file an issue](https://github.com/gitpoint/git-point/issues/new). Feature requests are always welcome. If you wish to contribute, please take a quick look at the [guidelines](./CONTRIBUTING.md)!
-
-If there's anything you'd like to chat about, please feel free to join our [Gitter chat](https://gitter.im/git-point)!
-
-
-
+Feel free to send us feedback through [GMAIL](christinajmoon@gmail.com) or [FILE AN ISSUE](https://github.com/Garvit1809/Eco/issues/new)!
