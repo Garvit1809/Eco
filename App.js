@@ -12,6 +12,7 @@ function App() {
     "Cleaning products",
     "Clothing",
     "Feminine products",
+    "Baby products",
     "Other"
   ];
 
@@ -31,7 +32,7 @@ function App() {
   };
   return (
     <div className="app">
-      <h1>Product Substitution</h1>
+      <h1>Eco-Finder</h1>
       <p1>Find eco-friendly products instead of commercial ones.</p1>
       <div>
         Search: <input name="query" type="text" onChange={handleSearch} />
