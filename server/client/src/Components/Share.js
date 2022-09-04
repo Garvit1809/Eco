@@ -164,7 +164,7 @@ const Share = () => {
         <p>{currentUser.description}</p>
         </div>
       </Top>
-      <hr className="shareHr" />
+      <hr className="shareHr" />~
       <Bottom>
         <form onSubmit={handleSubmit}>
           <textarea
