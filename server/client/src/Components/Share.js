@@ -3,6 +3,7 @@ import styled from "styled-components";
 import FileBase64 from "react-file-base64";
 import ImageIcon from "@mui/icons-material/Image";
 import axios from 'axios';
+import Button from "./Button";
 
 const Section = styled.div`
   width: 100%;
@@ -93,7 +94,8 @@ const Bottom = styled.div`
 const Buttons = styled.div`
   display: flex;
   flex-direction: row;
-
+  align-items: center;
+  justify-content: space-between;
   @media only screen and (max-width: 700px) {
     display: flex;
     justify-content: space-between;
@@ -180,7 +182,7 @@ const Share = () => {
                 <ImageIcon />
                 <FileBase64 type="file" multiple={false} onDone={({ base64 }) => setPomst({ ...pomst, img: base64 })} />
             </Upload>
-            <button type="submit">Post</button>
+            <Button type="submit" text="Post" /> 
           </Buttons>
         </form>
       </Bottom>

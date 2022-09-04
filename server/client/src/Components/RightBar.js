@@ -63,6 +63,8 @@ const Heading = styled.h1`
   font-weight: 400;
   padding-left: 1.5rem;
   margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
   /* border: 1px solid red; */
   `;
 
@@ -89,7 +91,7 @@ const RightBar = () => {
   return (
     <Section>
       <Photos>
-        <Heading>Photos</Heading>
+        <Heading>Trending Campaigns</Heading>
         <hr />
         <Images>
           <img src={post1} alt="post1" />

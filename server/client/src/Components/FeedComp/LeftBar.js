@@ -6,15 +6,18 @@ import PersonIcon from "@mui/icons-material/Person";
 
 const Section = styled.div`
   flex: 2.5;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 50px - 5rem);
+  /* height: auto */
   position: sticky;
   top: 0;
   display: flex;
   justify-content: center;
 
   hr {
-    height: 0.7px;
+    height: 1px;
     width: 80%;
+    border: none;
+    background-color: #DADADA;
   }
 
   @media only screen and (max-width: 700px) {
@@ -78,6 +81,7 @@ const Credentials = styled.div`
   h5 {
     font-weight: 200;
     text-decoration: underline;
+    cursor: pointer;
   }
 
   @media only screen and (max-width: 700px) {
@@ -134,7 +138,12 @@ const InfoItem = styled.div`
   }
 
   p{
-    font-weight: 150;
+    font-weight: 200;
+
+    span{
+      color: orange;
+      font-weight: 500;
+    }
   }
 `;
 
@@ -165,8 +174,20 @@ export default function Sidebar() {
         <hr />
         <Info>
           <InfoItem>
-            <PersonIcon />
+            🧑
             <p>{currentUser.username}</p>
+          </InfoItem>
+          <InfoItem>
+            🏆
+            <p>Hosted <span>2</span> Campaigns</p>
+          </InfoItem>
+          <InfoItem>
+            🥇
+            <p>Contributed in <span>4</span> Campaigns</p>
+          </InfoItem>
+          <InfoItem>
+            🥇
+            <p>Participation in <span>5</span> Events</p>
           </InfoItem>
         </Info>
       </Details>

@@ -129,7 +129,7 @@ const Profile = () => {
             console.log("Hell");
             userData.profilePicture = data.userData.profilePicture;
             userData.userDescription = data.userData.userDescription;
-            localStorage.setItem("ecogather-user", JSON.stringify(data.userData));
+            localStorage.setItem("ecogather-user", JSON.stringify(userData));
             navigate("/");
         }
     }
