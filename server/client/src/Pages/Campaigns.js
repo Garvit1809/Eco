@@ -4,10 +4,12 @@ import styled from "styled-components";
 import Button from "../Components/Button";
 import Navbar from "../Components/Navbar";
 import { campaigns } from "./CampaignData";
-
-import wallpaper from "../Assets/Wallpaper2.webp";
 import LeftHead from "../Components/CampaignComp/LeftHead";
 import RightHead from "../Components/CampaignComp/RightHead";
+
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { MdPeopleAlt, MdAttachMoney } from 'react-icons/md'
+// import { MdAttachMoney } from 'r'
 
 const Section = styled.div`
   width: 100%;
@@ -18,49 +20,11 @@ const Section = styled.div`
 `;
 
 const Header = styled.header`
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
-
-// const LeftHead = styled.div`
-//   width: 50%;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: space-around;
-//   /* background-color: rgb(243,243,243); */
-//   /* border-radius: 10px; */
-//   border-top-left-radius: 10px;
-//   border-bottom-left-radius: 10px;
-
-//   h2 {
-//     color: rgba(0, 0, 0, 0.8);
-//     font-size: 1.5rem;
-//     font-weight: 400;
-//     margin-bottom: 0.4rem;
-//   }
-//   /* border: 1px solid red; */
-// `;
-
-// const RightHead = styled.div`
-//   width: 50%;
-//   /* background-color: #202020; */
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: space-around;
-//   border-top-right-radius: 10px;
-//   border-bottom-right-radius: 10px;
-
-//   h2 {
-//     color: rgb(223, 223, 223);
-//     font-size: 1.5rem;
-//     font-weight: 400;
-//     margin-bottom: 0.4rem;
-//   }
-// `;
 
 const CampaignDesc = styled.div`
   width: 86%;
@@ -103,27 +67,34 @@ const ImageConatiner = styled.div`
   }
 `;
 
-// const Name = styled.p`
-//     position: absolute;
-//     /* bottom: 0; */
-//     top: 0;
-//     color: orange;
-//     z-index: 10;
-// `
 
 const Content = styled.div`
   /* border: 1px solid red; */
 
   h3,
-  h4 {
+  h4,h2 {
     margin-left: 0.8rem;
+  }
+
+  h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
   }
 
   h3 {
     /* color: grey; */
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+
+    svg{
+      width: 16px;
+      height: 16px;
+      fill: grey;
+    }
   }
 
   h4.desc {
@@ -137,21 +108,46 @@ const Content = styled.div`
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 0.2rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
     span {
       color: orange;
       font-weight: 600;
+    }
+
+    svg{
+      width: 16px;
+      height: 16px;
+      fill: grey;
+      margin-right: 0.2rem;
     }
   }
 
   h4.raised {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.2rem;
     font-size: 1rem;
     font-weight: 500;
-
+    display: flex;
+    align-items: center;
     span {
       color: orange;
       font-weight: 600;
     }
+
+    svg{
+      width: 16px;
+      height: 16px;
+      fill: grey;
+      margin-right: -0.1rem;
+    }
+  }
+
+  div{
+    margin-bottom: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 `;
 
@@ -179,14 +175,17 @@ const Campaigns = () => {
                 <img src={campaign.image} alt="" />
               </ImageConatiner>
               <Content>
-                <h3>{campaign.Location}</h3>
+                <h2>{campaign.name}</h2>
+                <h3><LocationOnIcon/> {campaign.Location}</h3>
                 <h4 className="desc">{campaign.description}</h4>
-                <h4 className="members">
-                  Totla Members:- <span>{campaign.members}</span>
-                </h4>
+                <div>
                 <h4 className="raised">
-                  Raised:- <span>{campaign.donation}</span>
+                  <MdAttachMoney/> <span>{campaign.donation}</span>
                 </h4>
+                <h4 className="members">
+                  <MdPeopleAlt/> <span>{campaign.members}</span>
+                </h4>
+                </div>
               </Content>
               <div onClick={() => handleCampaignClick(campaign.type)}>
                 {campaign.type === "Campaign" ? (
