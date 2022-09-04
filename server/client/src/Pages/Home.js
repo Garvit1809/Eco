@@ -12,13 +12,19 @@ justify-content: space-between;
 
 `
 
+const First = styled.div`
+
+`
+
 
 const Home = () => {
   return (
     <>
     <Navbar/>
     <Section>
-    <div>home page</div>
+    <First>
+        
+    </First>
     </Section>
     </>
   )
