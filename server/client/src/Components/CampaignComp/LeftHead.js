@@ -74,13 +74,6 @@ const LeftHead = () => {
           id=""
           placeholder="Enter an image for the event (URL preferred)"
         />
-        <h3>Event Type</h3>
-        <input
-          type="text"
-          name=""
-          id=""
-          placeholder="What Kind of Event is this?"
-        />
         <h3>Campaign Description</h3>
         <textarea
           name=""
