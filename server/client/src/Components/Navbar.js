@@ -62,7 +62,7 @@ const Navbar = () => {
     </MenuItem>
     <MenuItem><Link to="/feed" >Post</Link></MenuItem>
     <MenuItem><Link to="/campaigns" >Campaign</Link></MenuItem>
-    <MenuItem>Ishwarya🥴</MenuItem>
+    <MenuItem><Link to="/substitute" >EcoFinder</Link></MenuItem>
     </Menu>
     </Section>
   )

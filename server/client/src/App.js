@@ -8,6 +8,7 @@ import Event from './Components/Event';
 import Register from './Pages/Register';
 import Login from './Pages/Login';
 import Profile from './Pages/Profile';
+import Substitute from './Pages/Substitute';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
     <Route path='/feed' element={<Feed/>} />
     <Route path='/campaigns' element={<Campaigns/>} />
     <Route path='/campaigns/id' element={<Campaign/>} />
-    <Route path='campaigns/event' element={<Event/>} />
+    <Route path='/campaigns/event' element={<Event/>} />
+    <Route path='/substitute' element={<Substitute/>} />
     </Routes>
     </BrowserRouter>
   );
