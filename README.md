@@ -41,6 +41,40 @@ Our project, EcoTogether, is made up of three main components:
 - An Events/Campaigns Page where users can host a campaign or an event to make people aware about environment preservation.
 - "Eco-finder," a tool that helps users find eco-friendly alternatives to commercial products.
 
+---
+
+# 🖼️ Some Glimpse of the Site
+
+### 1. Home Page
+
+
+
+
+### 2. Social Page
+
+
+
+### 3. Events Page
+
+You can view all the ongoing events and campaigns on this page 👇👇
+![Screenshot 2022-09-05 052550](https://user-images.githubusercontent.com/89806031/188338479-17c35079-7c95-44c5-88b8-f324627d6dd2.png)
+
+An Upcoming Event 
+![Screenshot 2022-09-05 052636](https://user-images.githubusercontent.com/89806031/188338491-d2c67d12-9b7c-4d09-a4da-642af90f5193.png)
+
+
+### 4. Ecofinder Page
+
+
+
+
+### 5. Authentication Pages
+
+SignUp Page
+![Screenshot 2022-09-05 052325](https://user-images.githubusercontent.com/89806031/188338417-e23856d2-56a2-4e29-8dd6-3981bbfbb467.png)
+
+---
+
 ## Tech Used 
 - Development 
   - Frontend :
