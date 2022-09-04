@@ -6,7 +6,6 @@ import ChatRoom from "./ChatComp/ChatRoom/ChatRoom";
 const Section = styled.div`
   width: 100%;
   height: calc(100vh - 4rem);
-  border: 1px solid red;
   content: "";
   display: table;
   clear: both;

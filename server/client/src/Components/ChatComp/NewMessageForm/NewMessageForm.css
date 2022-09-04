@@ -1,5 +1,8 @@
 .new-message-form {
   display: flex;
+  position: fixed;
+  bottom: 20px;
+  width: 70%;
 }
 
 .new-message-input-field {
