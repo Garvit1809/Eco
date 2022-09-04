@@ -123,7 +123,7 @@ const Share = () => {
     img: "",
   });
 
-  const [currentUser, setCurrentUser] = useState(undefined);
+  const [currentUser, setCurrentUser] = useState({});
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -151,8 +151,8 @@ const Share = () => {
       description: pomst.desc,
       img: pomst.img,
     });
-    // console.log({data});
-    console.log("posted");
+    console.log({data});
+    // console.log("posted");
   };
 
   return (
@@ -161,10 +161,10 @@ const Share = () => {
         <img src={currentUser.profilePicture} alt="user" />
         <div>
         <h2>{currentUser.username}</h2>
-        <p>{currentUser.description}</p>
+        <p>{currentUser.userDescription}</p>
         </div>
       </Top>
-      <hr className="shareHr" />~
+      <hr className="shareHr" />
       <Bottom>
         <form onSubmit={handleSubmit}>
           <textarea

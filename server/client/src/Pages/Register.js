@@ -14,6 +14,8 @@ const Section = styled.div`
   justify-content: center;
   background-image: url(${Wallpaper});
   background-size: 100vw;
+  width: 100vw;
+  height: 100vh;
 
   img{
     width: 100vw;
@@ -160,7 +162,7 @@ const Register = () => {
       }
       if (data.status === true) {
         localStorage.setItem("ecogather-user", JSON.stringify(data.user));
-        navigate("/");
+        navigate("/profile");
       }
     }
   };

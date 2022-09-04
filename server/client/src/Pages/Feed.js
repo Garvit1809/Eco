@@ -2,24 +2,22 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import Navbar from "../Components/Navbar";
 import RightBar from "../Components/RightBar";
-import CentreBar from "../Components/CentreBar";
 import LeftBar from "../Components/FeedComp/LeftBar";
 import { useNavigate } from "react-router-dom";
+import CentreBar from "../Components/FeedComp/CentreBar";
 
 const Section = styled.div`
-display: flex;
-width: 100%;
-min-height: 200vh;
-
-@media only screen and (max-width:700px) {
   display: flex;
-  flex-direction: column;
-}
+  width: 100%;
+  min-height: 200vh;
+
+  @media only screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
-
 const Home = () => {
-
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -33,7 +31,7 @@ const Home = () => {
       <Navbar />
       <Section>
         <LeftBar />
-        <CentreBar />
+        <CentreBar/>
         <RightBar />
       </Section>
     </>

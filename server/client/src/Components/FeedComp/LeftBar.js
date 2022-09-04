@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 import PersonIcon from "@mui/icons-material/Person";
-import WorkIcon from "@mui/icons-material/Work";
-import SchoolIcon from "@mui/icons-material/School";
 
 const Section = styled.div`
   flex: 2.5;
@@ -147,7 +145,8 @@ export default function Sidebar() {
   useEffect(() => {
     async function fetchUserData() {
       if (localStorage.getItem("ecogather-user")) {
-        setCurrentUser(await JSON.parse(localStorage.getItem("ecogather-user")));
+        const userData = await JSON.parse(localStorage.getItem("ecogather-user"))
+        setCurrentUser(userData);
         setIsLoading(true)
       }
     }

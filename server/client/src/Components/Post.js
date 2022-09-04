@@ -144,29 +144,9 @@ const Post = ({ post, currentUser }) => {
   const [isLiked, setIsLiked] = useState(false);
 
   const likeHandler = async () => {
-    // likes,dislikes backend stuff🥴
-
-    // const postId = post._id;
-    // const currentUsername = currentUser.username;
-    // const newArr = likes.push(currentUsername)
-    // console.log("The new Array is :-" + newArr);
-    // if (!(post.likes).includes(currentUsername)) {
-    //   const { data } = await axios.post(`${updatePostRoute}/${postId}`, {
-    //     id: postId,
-    //     likesArr: newArr
-    //   });
-    //   console.log({data});
-    // }
-
     setLike(isLiked ? like - 1 : like + 1);
     setIsLiked(!isLiked);
   };
-
-  // fetch the posts id ^^
-  // for updating --> get current users name,id ^^
-  // after grabbing post, update the like array
-  // add the user to like array
-  // console.log(typeof([post.likes]));
 
   return (
     <Section>
