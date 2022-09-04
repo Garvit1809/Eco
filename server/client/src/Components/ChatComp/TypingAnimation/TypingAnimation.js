@@ -1,4 +1,5 @@
 import React from "react";
+import "./TypingAnimation.css";
 
 const TypingAnimation = () => {
   return (

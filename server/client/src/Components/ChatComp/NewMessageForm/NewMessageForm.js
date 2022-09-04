@@ -1,4 +1,5 @@
 import React from "react";
+import "./NewMessageForm.css";
 
 const NewMessageForm = ({
   newMessage,

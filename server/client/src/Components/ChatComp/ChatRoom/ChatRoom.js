@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 
-import useChat from "../../Hooks/useChat";
-import useTyping from "../../Hooks/useTyping";
+import useChat from "../../../Hooks/useChat";
+import useTyping from "../../../Hooks/useTyping";
 
-import ChatMessage from "./ChatMessage";
-import NewMessageForm from "./NewMessageForm";
-import TypingMessage from "./TypingMessage";
-import Users from "./Users";
-import UserAvatar from "./UserAvatar";
+import "./ChatRoom.css";
+import ChatMessage from "../ChatMessage/ChatMessage";
+import NewMessageForm from "../NewMessageForm/NewMessageForm";
+import TypingMessage from "../TypingMessage/TypingMessage";
+import Users from "../Users/Users";
+import UserAvatar from "../UserAvatar/UserAvatar";
 
 const ChatRoom = (props) => {
-  const chat = props.chat;
-  const chatId = chat._id;
+  const roomId = 1;
   const {
     messages,
     user,
@@ -20,8 +20,7 @@ const ChatRoom = (props) => {
     sendMessage,
     startTypingMessage,
     stopTypingMessage,
-  } = useChat(chatId);
-
+  } = useChat(roomId);
   const [newMessage, setNewMessage] = useState("");
 
   const { isTyping, startTyping, stopTyping, cancelTyping } = useTyping();
@@ -45,7 +44,6 @@ const ChatRoom = (props) => {
   return (
     <div className="chat-room-container">
       <div className="chat-room-top-bar">
-        <h1 className="room-name">Chat: {chatId}</h1>
         {user && <UserAvatar user={user}></UserAvatar>}
       </div>
       <Users users={users}></Users>

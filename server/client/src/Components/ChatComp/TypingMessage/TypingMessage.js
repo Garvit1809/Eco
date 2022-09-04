@@ -1,5 +1,7 @@
 import React from "react";
-import TypingAnimation from "./TypingAnimation";
+import TypingAnimation from "../TypingAnimation/TypingAnimation";
+
+import "./TypingMessage.css";
 
 const TypingMessage = ({ user }) => {
   return (

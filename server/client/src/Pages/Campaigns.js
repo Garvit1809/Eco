@@ -7,8 +7,8 @@ import { campaigns } from "./CampaignData";
 import LeftHead from "../Components/CampaignComp/LeftHead";
 import RightHead from "../Components/CampaignComp/RightHead";
 
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import { MdPeopleAlt, MdAttachMoney } from 'react-icons/md'
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { MdPeopleAlt, MdAttachMoney } from "react-icons/md";
 // import { MdAttachMoney } from 'r'
 
 const Section = styled.div`
@@ -51,7 +51,7 @@ const CampaignDesc = styled.div`
   }
 `;
 
-const ImageContainer = styled.div`
+const ImageConatiner = styled.div`
   width: 21.5vw;
   height: 35vh;
   /* border: 1px solid red; */
@@ -67,16 +67,16 @@ const ImageContainer = styled.div`
   }
 `;
 
-
 const Content = styled.div`
   /* border: 1px solid red; */
 
   h3,
-  h4,h2 {
+  h4,
+  h2 {
     margin-left: 0.8rem;
   }
 
-  h2{
+  h2 {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 0.2rem;
@@ -90,7 +90,7 @@ const Content = styled.div`
     display: flex;
     align-items: center;
 
-    svg{
+    svg {
       width: 16px;
       height: 16px;
       fill: grey;
@@ -116,7 +116,7 @@ const Content = styled.div`
       font-weight: 600;
     }
 
-    svg{
+    svg {
       width: 16px;
       height: 16px;
       fill: grey;
@@ -135,7 +135,7 @@ const Content = styled.div`
       font-weight: 600;
     }
 
-    svg{
+    svg {
       width: 16px;
       height: 16px;
       fill: grey;
@@ -143,7 +143,7 @@ const Content = styled.div`
     }
   }
 
-  div{
+  div {
     margin-bottom: 0.7rem;
     display: flex;
     align-items: center;
@@ -155,7 +155,7 @@ const Campaigns = () => {
   const navigate = useNavigate();
   const handleCampaignClick = (type) => {
     if (type === "Campaign") {
-      navigate("/campaigns/id");
+      navigate("/campaigns/1");
     } else {
       navigate("/campaigns/event");
     }
@@ -164,23 +164,29 @@ const Campaigns = () => {
     <>
       <Navbar />
       <Header>
-        <LeftHead/>
-        <RightHead/>
+        <LeftHead />
+        <RightHead />
       </Header>
       <Section>
         {campaigns.map((campaign) => {
           return (
             <CampaignDesc>
-              <ImageContainer>
+              <ImageConatiner>
                 <img src={campaign.image} alt="" />
-              </ImageContainer>
+              </ImageConatiner>
               <Content>
                 <h2>{campaign.name}</h2>
-                <h3><LocationOnIcon/> {campaign.Location}</h3>
+                <h3>
+                  <LocationOnIcon /> {campaign.Location}
+                </h3>
                 <h4 className="desc">{campaign.description}</h4>
-                <h4 className="members">
-                  <MdPeopleAlt/> <span>{campaign.members}</span>
-                </h4>
+                <div>
+                  <h4 className="raised">
+                    <MdAttachMoney /> <span>{campaign.donation}</span>
+                  </h4>
+                  <h4 className="members">
+                    <MdPeopleAlt /> <span>{campaign.members}</span>
+                  </h4>
                 </div>
               </Content>
               <div onClick={() => handleCampaignClick(campaign.type)}>
