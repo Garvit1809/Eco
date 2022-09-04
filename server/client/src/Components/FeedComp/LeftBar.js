@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import InfoIcon from '@mui/icons-material/Info';
 
 import PersonIcon from "@mui/icons-material/Person";
 

@@ -4,6 +4,8 @@ import Navbar from "./Navbar";
 import img1 from "../Assets/EventImg3.jpg";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { FaDiscord } from 'react-icons/fa'
+import { BsLink } from 'react-icons/bs'
 
 const Section = styled.div`
   width: 100%;
@@ -276,7 +278,18 @@ const Container = styled.div`
 `
 
 const Links = styled.div`
+/* border: 1px solid red; */
+box-sizing: border-box;
+margin-left: 1rem;
 
+svg{
+  width: 40px;
+  height: 40px;
+  fill: #1c539e;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
 `
 
 const Event = () => {
@@ -364,6 +377,8 @@ const Event = () => {
                 </Attend>
                 <h2>Links</h2>
                 <Links>
+                <FaDiscord/>
+                <BsLink/>
                 </Links>
             </LeftDesc>
             <RightDes>
