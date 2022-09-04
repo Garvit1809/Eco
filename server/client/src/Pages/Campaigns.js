@@ -87,7 +87,7 @@ const CampaignDesc = styled.div`
   }
 `;
 
-const ImageConatiner = styled.div`
+const ImageContainer = styled.div`
   width: 21.5vw;
   height: 35vh;
   /* border: 1px solid red; */
@@ -175,14 +175,14 @@ const Campaigns = () => {
         {campaigns.map((campaign) => {
           return (
             <CampaignDesc>
-              <ImageConatiner>
+              <ImageContainer>
                 <img src={campaign.image} alt="" />
-              </ImageConatiner>
+              </ImageContainer>
               <Content>
                 <h3>{campaign.Location}</h3>
                 <h4 className="desc">{campaign.description}</h4>
                 <h4 className="members">
-                  Totla Members:- <span>{campaign.members}</span>
+                  Total Members:- <span>{campaign.members}</span>
                 </h4>
                 <h4 className="raised">
                   Raised:- <span>{campaign.donation}</span>
