@@ -14,6 +14,8 @@ const Btn = styled.button`
   text-transform: uppercase;
   height: 45px;
   width: 130px;
+  width: auto;
+  padding: 0 1.4rem;
   opacity: 1;
   /* background-color: rgba(0, 0, 0, 0.8); */
   background-color: ${props => props.backgroundColor};
