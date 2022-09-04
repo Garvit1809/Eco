@@ -6,6 +6,8 @@ import Navbar from "../Components/Navbar";
 import { campaigns } from "./CampaignData";
 
 import wallpaper from "../Assets/Wallpaper2.webp";
+import LeftHead from "../Components/CampaignComp/LeftHead";
+import RightHead from "../Components/CampaignComp/RightHead";
 
 const Section = styled.div`
   width: 100%;
@@ -22,43 +24,43 @@ const Header = styled.header`
   justify-content: center;
 `;
 
-const LeftHead = styled.div`
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  /* background-color: rgb(243,243,243); */
-  /* border-radius: 10px; */
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+// const LeftHead = styled.div`
+//   width: 50%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: space-around;
+//   /* background-color: rgb(243,243,243); */
+//   /* border-radius: 10px; */
+//   border-top-left-radius: 10px;
+//   border-bottom-left-radius: 10px;
 
-  h2 {
-    color: rgba(0, 0, 0, 0.8);
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 0.4rem;
-  }
-  /* border: 1px solid red; */
-`;
+//   h2 {
+//     color: rgba(0, 0, 0, 0.8);
+//     font-size: 1.5rem;
+//     font-weight: 400;
+//     margin-bottom: 0.4rem;
+//   }
+//   /* border: 1px solid red; */
+// `;
 
-const RightHead = styled.div`
-  width: 50%;
-  /* background-color: #202020; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+// const RightHead = styled.div`
+//   width: 50%;
+//   /* background-color: #202020; */
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: space-around;
+//   border-top-right-radius: 10px;
+//   border-bottom-right-radius: 10px;
 
-  h2 {
-    color: rgb(223, 223, 223);
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 0.4rem;
-  }
-`;
+//   h2 {
+//     color: rgb(223, 223, 223);
+//     font-size: 1.5rem;
+//     font-weight: 400;
+//     margin-bottom: 0.4rem;
+//   }
+// `;
 
 const CampaignDesc = styled.div`
   width: 86%;
@@ -161,24 +163,13 @@ const Campaigns = () => {
     } else {
       navigate("/campaigns/event");
     }
-    // alert("Hello");
   };
   return (
     <>
       <Navbar />
       <Header>
-        <LeftHead>
-          <h2>Start a Campaign to Clean the Environment</h2>
-          <Button
-            text="Start Campaign"
-            color="#ffffff"
-            backgroundColor="rgba(0,0,0,0.8)"
-          />
-        </LeftHead>
-        <RightHead>
-          <h2>Host Events to bring awareness about our Environment</h2>
-          <Button text="Host Event" />
-        </RightHead>
+        <LeftHead/>
+        <RightHead/>
       </Header>
       <Section>
         {campaigns.map((campaign) => {
