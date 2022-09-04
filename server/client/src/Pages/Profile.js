@@ -137,7 +137,7 @@ const Profile = () => {
   return (
     <Section>    
     <form onSubmit={handleSubmit}>
-    <h1>EcoGather</h1>
+    <h1>EcoTogether</h1>
     <h3>Tell us something about yourself</h3>
     <textarea name="desc" cols="30" rows="10" placeholder='Tell us about yourself' onChange={(e) => handleChange(e)} />
     <PicInput>
