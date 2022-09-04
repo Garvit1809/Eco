@@ -66,26 +66,26 @@ const LeftHead = () => {
       <h1>Create a Campaign so more people can get involved and help in cleaning our Environment</h1>
       <form onSubmit={handleSubmitCampaign} >
         <h3>Campaign Name</h3>
-        <input type="text" name="" placeholder="Enter Events Name" />
+        <input type="text" name="" placeholder="Enter Campaigns Name" />
         <h3>Campaign Image</h3>
         <input
           type="text"
           name=""
           id=""
-          placeholder="Enter an image for the event (URL preferred)"
+          placeholder="Enter an image for the campaign (URL preferred)"
         />
         <h3>Campaign Description</h3>
         <textarea
           name=""
           id=""
-          placeholder="Specify the Event Description"
+          placeholder="Specify the Campaign Description"
         />
         <h3>Location</h3>
         <input
           type="text"
           name=""
           id=""
-          placeholder="Enter the location of Event if InPerson || Hybrid"
+          placeholder="Enter the location of Campaign"
         />
         <button type='submit' >Start Campaign</button>
       </form>

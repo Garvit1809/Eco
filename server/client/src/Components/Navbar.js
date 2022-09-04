@@ -24,6 +24,7 @@ const Heading = styled.h1`
 margin-left: 4rem;
 font-weight: 400;
 transition: all 0.2s ease;
+cursor: pointer;
 text-shadow: 2px 2px 30px rgba(0, 255, 71, 1);
 &:hover{
   /* transform: scale(); */
@@ -60,7 +61,7 @@ const Navbar = () => {
     <MenuItem>
     <Link to="/">Home</Link>
     </MenuItem>
-    <MenuItem><Link to="/feed" >Post</Link></MenuItem>
+    <MenuItem><Link to="/social" >Social</Link></MenuItem>
     <MenuItem><Link to="/campaigns" >Campaign</Link></MenuItem>
     <MenuItem><Link to="/substitute" >EcoFinder</Link></MenuItem>
     </Menu>

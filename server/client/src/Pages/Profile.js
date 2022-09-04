@@ -130,7 +130,7 @@ const Profile = () => {
             userData.profilePicture = data.userData.profilePicture;
             userData.userDescription = data.userData.userDescription;
             localStorage.setItem("ecogather-user", JSON.stringify(userData));
-            navigate("/");
+            // navigate("/");
         }
     }
     

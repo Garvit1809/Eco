@@ -85,13 +85,24 @@ const Substitute = () => {
         });
     }
 
+    const sliceURL = (url) => {
+      // let url = props.URL;
+      if (url.startsWith("http:")) {
+        url = url.slice(5);
+        return url;
+      } else {
+        url = url.slice(6);
+        return url;
+      }
+    };
+
   return (
     <>
     <Navbar/>
     <Section>
     <h1>Find eco-friendly products instead of commercial ones.</h1>
     <form onSubmit={handleSubmit}>
-    <input type="text" name="" id="" value={query} onChange={(e) => setQuery(e.target.value)} />
+    <input type="text" value={query} onChange={(e) => setQuery(e.target.value)} />
     <div>
     <Button text="Search" />
     </div>
@@ -102,7 +113,7 @@ const Substitute = () => {
         data.map(ele => {
             return(
                 <Result>
-                <Link to={ele.link} target="_blank"  >
+                <Link to={sliceURL(ele.link)} target="_blank"  >
                 {ele.title}
                 </Link>
                 </Result>

@@ -25,7 +25,7 @@ export const campaigns = [
     {
         name: 'Beach',
         image: img4,
-        Location: 'LA',
+        Location: 'Online',
         description: 'Beach has been polluted by plastic. Come forward to clean this shit',
         type: "Event",
         members: 20,

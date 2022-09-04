@@ -18,7 +18,7 @@ function App() {
     <Route path='/register' element={<Register/>} />
     <Route path='/profile' element={<Profile/>} />
     <Route path='/login' element={<Login/>} />
-    <Route path='/feed' element={<Feed/>} />
+    <Route path='/social' element={<Feed/>} />
     <Route path='/campaigns' element={<Campaigns/>} />
     <Route path='/campaigns/id' element={<Campaign/>} />
     <Route path='/campaigns/event' element={<Event/>} />

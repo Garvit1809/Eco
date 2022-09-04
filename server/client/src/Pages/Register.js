@@ -14,6 +14,9 @@ const Section = styled.div`
   justify-content: center;
   background-image: url(${Wallpaper});
   background-size: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
 

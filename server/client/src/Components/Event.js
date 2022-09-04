@@ -318,28 +318,28 @@ const Event = () => {
             </ImageContainer>
               <Container>
                 <header>
-                  <h1>Hack Girl Summer 3</h1>
-                  <h2>Aug 19th-21st, 2022</h2>
+                  <h1>ART on CLIMATE</h1>
+                  <h2>Sept 19th-21st, 2022</h2>
                 </header>
                 <footer>
-                  <h2>Hosted by <span>AuthorityName</span></h2>
+                  <h2>Hosted by <span>MLH</span></h2>
                 </footer>
               </Container>
             </LeftHeader>
             <RightHeader>
               <header>
-                <h2>Event Name</h2>
-                <h6>Hosted by AuthorityName</h6>
+                <h2>Art on Climate</h2>
+                <h6>Hosted by MLH</h6>
                 <Schedule>
                 <AccessTimeIcon/>
                 <div>
-                <h4>Tuesday, 6 Sept, 2022</h4>
-                <h5>8:30PM to Sep 8, 6:30PM IST</h5>
+                <h4>Tuesday, 19 Sept, 2022</h4>
+                <h5>8:30PM to Sep 21, 6:30PM IST</h5>
                 </div>
                 </Schedule>
                 <Schedule>
                 <LocationOnIcon/>
-                <h4>Event is hosted $</h4>
+                <h4>Event is hosted online/digital</h4>
                 </Schedule>
               </header>
               <footer>Register Here</footer>
@@ -348,31 +348,25 @@ const Event = () => {
           <Description>
             <LeftDesc>
                 <h2 className="start" >Event Description</h2>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quibusdam velit qui eius accusamus vero minima ipsum nobis, non consectetur dicta alias aspernatur! Amet quo ducimus aperiam. Ipsam labore esse temporibus necessitatibus hic, velit possimus ipsum obcaecati, voluptate asperiores animi illum mollitia. Nihil exercitationem quod saepe, numquam quae possimus dolorem.</h4>
+                <h4>We have come with an exciting event for you, Art on Climate. Join us and learn how you can conserve environment and how human activities are affecting climate. Here, we are having a workshop as well, MS Paint Workshop giving opportunity to show your creativity and art. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, magni!</h4>
                 <h2>Who can attend?</h2>
                 <h4>Locations have different requirements for who can attend. This location is open to the following:
                 </h4>
                 <Attend>
                 <div>
-                Minors
+                Minors(between 13-19)
                 </div>
                 <div>
-                Adults
+                College Students
                 </div>
                 <div>
-                Adults
+                Working Professionals
                 </div>
                 <div>
-                Adults
+                Graduates
                 </div>
                 <div>
-                Adults
-                </div>
-                <div>
-                Adults
-                </div>
-                <div>
-                Adults
+                Non Coders
                 </div>
                 </Attend>
                 <h2>Links</h2>
@@ -387,7 +381,7 @@ const Event = () => {
                     <img src={user.profilePicture} alt="" />
                     <div>
                     <h5>{user.username}</h5>
-                    <h6>From <span>Organization Name</span></h6>
+                    <h6>From <span>MLH</span></h6>
                     </div>
                 </Host>
             </RightDes>

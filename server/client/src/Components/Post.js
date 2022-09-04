@@ -161,7 +161,7 @@ const Post = ({ post, currentUser }) => {
         <MoreVert />
       </Top>
       <Center>
-        <span>{post.desc}</span>
+        <span>{post.description}</span>
         <img src={post.img} alt="postImg" />
       </Center>
       <Bottom>
