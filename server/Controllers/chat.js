@@ -19,6 +19,24 @@ const getChatById = asyncHandler(async (req, res) => {
   }
 });
 
+const getChatUsers = asyncHandler(async (req, res) => {
+  try {
+    const users = Chat.find({ _id: req.chatId }).users;
+    res.status(200).send(users);
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+});
+
+const getChatMessages = asyncHandler(async (req, res) => {
+  try {
+    const messages = Chat.find({ _id: req.chatId }).messages;
+    res.status(200).send(messages);
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+});
+
 const createChat = asyncHandler(async (req, res) => {
   const currUser = req.user;
   try {
@@ -117,6 +135,8 @@ const fetchChats = asyncHandler(async (req, res) => {
 module.exports = {
   getAllChats,
   getChatById,
+  getChatUsers,
+  getChatMessages,
   createChat,
   addChatUser,
   removeChatUser,
