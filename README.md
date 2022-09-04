@@ -1,14 +1,16 @@
 <h1 align="center">
- <img src="https://user-images.githubusercontent.com/51237312/187054410-7d75fbc0-6b4e-4927-bc81-9ce0fa996367.png" width=300/>
+ <img src="https://user-images.githubusercontent.com/43914131/188337764-a697546e-3ea8-4d90-960c-636fe554cfe5.png">
 </h1>
 <h4 align="center">EcoTogether: The future of sustainability</h4>
-<a href="http://mindlycare.xyz/" target="_blank">
-<img width="200" alt="image" src="https://user-images.githubusercontent.com/51237312/187055782-6c36240f-d8c6-4206-8aa8-1a7708be1dcf.png">
-</a>
+<h2 align="center">
+ <a href="http://mindlycare.xyz/" target="_blank">
+ <img align="center" width="200" alt="image" src="https://user-images.githubusercontent.com/43914131/188337832-050e0517-32bb-4ac6-ac69-202c488285da.png">
+ </a>
+</h2>
 </div>
 
 
-## About ℹ️ 
+## About
 
 EcoTogether attempts to address the issue of environmental sustainability through human responsibility. It provides users a social platform where they are able to share resources in order to enact change in their community, and features a tool that helps users find eco-friendly alternatives to commercial products. Through EcoTogether, we aim to bring people together in the environmental movement, and instill hope that it is never too late to save our planet.
 
@@ -34,11 +36,13 @@ EcoTogether attempts to address the issue of environmental sustainability throug
 
 Meet the wonderful team who worked on this project!
 
-[![Christina Moon](https://avatars1.githubusercontent.com/u/12688534?v=3&s=144)](https://github.com/chrmoon25)  | [![Garvit Varshney](https://github.com/iharsh234/WebApp/blob/master/images/quandl.jpg)](https://github.com/Garvit1809)  | [![Lacey Umamoto](https://github.com/iharsh234/WebApp/blob/master/images/quandl.jpg)](https://github.com/lumamoto)  | [![Ishwarya Sundhararajan](https://github.com/iharsh234/WebApp/blob/master/images/quandl.jpg)](https://github.com/iSundhararajan)
----|---
-[Christina Moon](https://github.com/chrmoon25) |[Garvit Varshney](https://github.com/Garvit1809) |[Lacey Umamoto](https://github.com/lumamoto)
- |[Ishwarya Sundhararajan](https://github.com/iSundhararajan)
+Click to check out our Github Profiles- 
+
+From L --> R: Christina Moon, Garvit Varshney, Lacey Umamoto, Ishwarya Sundhararajan
+
+[![Christina Moon](https://user-images.githubusercontent.com/43914131/188337671-5f609228-bfb7-46ae-bff3-b9a8d72e0d9d.png)](https://github.com/chrmoon25) | [![Garvit Varshney](https://user-images.githubusercontent.com/43914131/188337690-06232e16-ad9a-4bd7-813f-8af6b7c6443a.png)](https://github.com/Garvit1809) | [![Lacey Umamoto](https://user-images.githubusercontent.com/43914131/188337712-8e3ddbad-052b-4e87-a746-7c20dd0e0a76.png)](https://github.com/lumamoto) | [![Ishwarya Sundhararajan](https://user-images.githubusercontent.com/43914131/188337725-3f958dbb-242a-4d1c-bdee-0b34abd7c3b0.png)](https://github.com/iSundhararajan) |
+
 
 ## Feedback
 
-Feel free to send us feedback through [GMAIL](christinajmoon@gmail.com) or [FILE AN ISSUE](https://github.com/Garvit1809/Eco/issues/new)!
+Feel free to send us feedback by [FILING AN ISSUE](https://github.com/Garvit1809/Eco/issues/new)!
