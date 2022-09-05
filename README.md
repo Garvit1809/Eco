@@ -47,12 +47,9 @@ Our project, EcoTogether, is made up of three main components:
 
 ### 1. Home Page
 
-![Screenshot 2022-09-05 052822](https://user-images.githubusercontent.com/89806031/188338548-8ba54340-3b58-41c9-bd1f-99f4447a0881.png)
-![image](https://user-images.githubusercontent.com/89806031/188338606-9b4753c4-46ff-4d6d-9a55-cbdec5e44b52.png)
-
 
 ### 2. Social Page
-
+![Screenshot 2022-09-05 052822](https://user-images.githubusercontent.com/89806031/188338548-8ba54340-3b58-41c9-bd1f-99f4447a0881.png)
 
 
 ### 3. Events Page
@@ -66,6 +63,8 @@ An Upcoming Event
 
 ### 4. Ecofinder Page
 
+Here you can serach for any commercial product for its environmental-friendlly substitute. It gives us a list of some searches & on clicking them, you can get more info👇👇
+![Screenshot 2022-09-05 053536](https://user-images.githubusercontent.com/89806031/188338822-4d7610be-b970-4f0d-9187-ef872daf1282.png)
 
 
 
