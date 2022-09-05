@@ -47,6 +47,7 @@ Our project, EcoTogether, is made up of three main components:
 
 ### 1. Home Page
 
+![image](https://user-images.githubusercontent.com/89806031/188339043-13188896-10cd-4021-ae22-7ebc97849ff3.png)
 
 ### 2. Social Page
 ![Screenshot 2022-09-05 052822](https://user-images.githubusercontent.com/89806031/188338548-8ba54340-3b58-41c9-bd1f-99f4447a0881.png)
@@ -55,7 +56,8 @@ Our project, EcoTogether, is made up of three main components:
 ### 3. Events Page
 
 You can view all the ongoing events and campaigns on this page 👇👇
-![Screenshot 2022-09-05 052550](https://user-images.githubusercontent.com/89806031/188338479-17c35079-7c95-44c5-88b8-f324627d6dd2.png)
+![Screenshot 2022-09-05 054253](https://user-images.githubusercontent.com/89806031/188339066-0fec5fd1-8889-44de-a4ed-a208b509e4b0.png)
+
 
 An Upcoming Event 
 ![Screenshot 2022-09-05 052636](https://user-images.githubusercontent.com/89806031/188338491-d2c67d12-9b7c-4d09-a4da-642af90f5193.png)
