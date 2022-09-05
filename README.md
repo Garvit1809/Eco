@@ -3,7 +3,7 @@
 </h1>
 <h4 align="center">EcoTogether: The future of sustainability</h4>
 <h2 align="center">
- <a href="/" target="_blank">
+ <a href="https://github.com/Garvit1809/Eco" target="_blank">
  <img align="center" width="200" alt="image" src="https://user-images.githubusercontent.com/43914131/188337832-050e0517-32bb-4ac6-ac69-202c488285da.png">
  </a>
 </h2>
